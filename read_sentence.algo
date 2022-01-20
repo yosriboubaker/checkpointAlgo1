@@ -1,0 +1,20 @@
+ALGORITHM checkpoint_algo_1
+VAR 
+c : CHAR;
+nv = 0 ; 
+str = 0 ;
+nw = 0 ;
+BEGIN
+REPEAT
+    read('c');
+    str = str + 1 ;
+    if (c = ('a' || 'e' || 'u' || 'o' || 'y' || 'A' || 'E' || 'U' || 'O' || 'Y')) then
+    nv = nv + 1 ;
+    if (c = ' ') then
+    nw = nw + 1 ;
+    write str ;  //nombre des caracteres
+     write nv ; //nomber des voyels 
+      write nw ; //nombre des words
+UNTIL (c = '.');
+
+END
